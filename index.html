@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <!--Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+
+    <title>percalf.de</title>
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/js.js"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Exo:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.min.css">
+ </head>
+ <body>
+
+     
+     
+     <!--Navigation-->
+    <nav class="lrf_nav_active lrf_nav">
+     <ul>
+      <li><a href="#start" class="nav_element">start</a></li>
+      <li><a href="#about" class="nav_element">about</a></li>
+      <li><img src="img/logo_alpha.png" alt="perclf"></li>
+      <li><a href="#portfolio" class="nav_element">portfolio</a></li>
+      <li><a href="#contact" class="nav_element">contact</a></li>
+     </ul>
+    </nav>
+
+     
+     
+    <!--Header-->
+    <div class="LRF_content_start" id="start">
+     <div class="lrf_start_img_box">
+        <img src="img/hi.png" class="hi">
+     </div>
+     <!--ScrollDow Point-->
+     <a href="#about" class="nav_element"><img src="img/arrow-down.png" class="arrow_down"></a>
+    </div>
+    
+     
+     
+     
+    <!--About Section-->
+    <div id="about" class="lrf_content_about">
+     <!--Logo-->
+     <img src="img/logo_alpha.png" alt="perclf Logo" class="about_logo">
+     <!--Container-->
+     <div class="lrf_content_about_container">
+      <h2>about</h2>
+      <span>
+       Ich bin norddeutscher Graphik, Minecraft und Webdesigner.
+       <br>Du hast ein Projekt?<br>Du brauchst mich?<br>
+       <b>Kontaktiere mich 
+       <a href="#contact" class="nav_element">hier</a>!</b>
+      </span>
+     </div>
+    </div>
+    
+     
+     
+    <!--Porttfolio-->
+     <div class="LRF_content_portfolio" id="portfolio">
+      <h2>portfolio</h2>
+       
+         <div class="LRF_PORT_MC LRF_PORT_ELEMENT">
+           <div class="lrf_port_overlay"></div>
+               <h1>Minecraft Designs</h1>
+           <span id="mc_bg"></span>
+           <span id="mc_render"></span>
+       </div>
+         
+         <div class="LRF_PORT_WD LRF_PORT_ELEMENT">
+          <div class="lrf_port_overlay"></div>
+          <h1>Webdesign</h1>
+          <span id="WD"></span>
+         </div>
+     </div>
+     
+     
+    <!--Kontakt-->
+    <div class="LRF_content_contact" id="contact">
+     <div>
+      <h2>contact</h2><span><b>Worauf wartest du?</b> Bestelle dir <b>jetzt</b> dein <b>kostenloses</b> Design,<br>tritt mit mir auf Discord in Kontakt. <br>Ich freue mich auf <b>dich</b>!</span>
+     </div>
+      <div class="lrf_contact_icon_container">
+       <ul>
+        
+        <li><a title="Designhub" href="http://designhub.party" target="_blank"><img src="img/designhub.png"></a></li>
+        
+        <li><a title="Discord Server" href="https://discord.gg/VhWPcdE" target="_blank"><img src="img/discord.png"></a></li>
+        
+        <li><a title="Youtube" href="https://www.youtube.com/channel/UC4A2zI5KA93EY3kia2VLwRg" target="_blank"><img src="img/YouTube_icon.png"></a></li>
+        
+        <li><a title="E-Mail" href="mailto:lrf@jhf.name" target="_blank"><img src="img/at.png"></a></li>
+       
+       </ul>
+      </div>
+    <!--Footer-->
+    </div>
+        <div class="lrf_footer">
+        <div>
+        <a href="impressum">Impressum</a>
+        <a href="datenschutz">Datenschutz</a>
+        </div>
+        </div>
+    
+    
+    
+    <!--PHP-->
+    <?php
+    error_reporting(0);
+    echo "<script> Smoothscrollphp('".$_GET['href']."'); </script>";
+    ?>
+    <div class="hi"></div>
+    </body>
+</html>

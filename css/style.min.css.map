@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACT,UAAU,EAAE,IAAI",
+"sources": ["../style.sass"],
+"names": [],
+"file": "style.min.css"
+}
